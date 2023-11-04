@@ -1,0 +1,49 @@
+links:Videos
+
+https://youtu.be/LocRdAMPEQM
+
+
+
+
+facebook
+Publicaçao
+
+Que tal aprender a fazer do zero um controle de gasto para o casal, segue o video , passo a passo. da Ideia geral. PRimeira Parte.
+
+playlist
+https://www.youtube.com/playlist?list=PL8Ml6PuZiQaRU5RIGB9k37nWPyhU0Matr
+
+primeira Aula
+https://www.youtube.com/watch?v=LocRdAMPEQM&list=PL8Ml6PuZiQaRU5RIGB9k37nWPyhU0Matr&index=1
+
+
+
+
+
+
+Despesa do Casal , com php TDD,HTML , Css e Banco de Dados  ,
+
+Fonte:https://fredbf.com/disciplinas/ufc/fundamentos/300%20ideias.pdf
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+GitHub:
+https://github.com/MundoDodev/despesacasal
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+Criado partir de uma lista de exercícios de lógica de Programação. 
+
+2.2.12 Despesas de casal 1 - Um casal divide as despesas domésticas mensalmente. Durante o mês
+cada um anota seus gastos e as contas que paga; no final eles dividem meio a meio. O casal deseja
+um programa que facilite o acerto: eles digitariam os gastos de cada um, e o programa mostraria
+quem deve a quem. Atualmente eles fazem o acerto manualmente, na forma da seguinte tabela:
+ITEM MARIDO ESPOSA TOTAL
+DESPESAS PAGAS 1278,60 875,30 2.153,90
+% PAGO 59,36 40,64 100
+VALOR DEVIDO 1.076,95 1.076,95 2.153,90
+SALDO 201,65 -201,65
+Portanto, os saldos devem ser iguais, e quem tiver o saldo negativo deve pagar o valor para o
+outro. Faça um programa que leia os valores adequados e efetue os cálculos. O total é a soma das
+despesas individuais; um percentual é o gasto individual dividido pelo total, multiplicado por 100;
+o valor devido por cada um é o mesmo e igual à metade do total; finalmente, cada saldo
+corresponde à metade da diferença entre o valor pago pela pessoa e o valor total.
+Uma tela para o programa pode ser, com os mesmos dados da tabela acima
+
+

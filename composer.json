@@ -1,0 +1,17 @@
+{
+    "name": "app/despesa",
+    "description": "Desafio de controle de Despesa Casal",
+    "autoload": {
+        "psr-4": {
+            "App\\Despesa\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "EdilsonCsilva",
+            "email": "edilsonclaudinosilva@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

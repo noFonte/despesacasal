@@ -1,0 +1,453 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/*gerais*/
+
+.hide {
+    display: none !important;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:active,
+a:visited {
+    color: #000;
+}
+
+.entry_highlights {
+    color: #2ddb0e;
+}
+
+.exit_highlights {
+    color: red;
+}
+
+
+.state_play {
+    background-color: rgba(45, 219, 14, .5);
+}
+
+
+.state_pending {
+    background-color: rgba(226, 26, 26, 0.5);
+}
+
+
+
+#chartdiv {
+    width: 100%;
+    height: 500px;
+}
+
+
+
+.info__photo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*gerais*/
+body {
+    height: 100%;
+}
+
+#dps__container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    box-sizing: border-box !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #fffefe;
+    display: flex;
+    flex-direction: column;
+}
+
+#dps__container .header {
+    position: relative;
+    min-height: 14rem;
+    overflow: hidden !important;
+    background-color: aquamarine;
+    position: relative;
+    display: flex;
+    flex: 1;
+    background-image: url(../img/casa-1.jpg);
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: -12rem;
+
+}
+
+#dps__container .main {
+
+    position: relative;
+    display: flex;
+    flex: 2.5;
+
+}
+
+
+#dps__container .header_title {
+    position: absolute;
+    color: #fff;
+    font-size: 4rem;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+}
+
+#dps__container .header_month_currenc {
+    position: absolute;
+    color: #fff !important;
+    font-size: 2rem;
+    right: 0;
+    top: 35%;
+    padding: 1rem;
+
+}
+
+
+#dps__container .header_month_currenc a {
+    color: #f2f2f2;
+    text-decoration: none;
+
+}
+
+#dps__container .header_month_currenc a:active,
+#dps__container .header_month_currenc a:visited {
+    color: #f2f2f2;
+}
+
+#dps__container .main .main__painel {
+    height: 10rem;
+    position: absolute;
+    overflow: hidden;
+    padding: .5rem;
+    top: -4.5rem;
+    width: 80%;
+    left: 8%;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+
+#dps__container .main .main__painel_content {
+
+    position: relative;
+    overflow: hidden;
+    padding: .5rem;
+    top: 6rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+#dps__container .main .main__painel .indicator {
+    position: relative;
+    height: 90%;
+    min-width: 25%;
+    background-color: #fff;
+    display: inline-block;
+    box-shadow: 0px 0px 5px #000;
+    margin: .5rem;
+    border-radius: .2rem;
+}
+
+#dps__container .main .main__painel .indicator .indicator__title {
+    position: relative;
+    text-align: end;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    min-height: 3rem;
+    font-size: 1.5rem;
+}
+
+#dps__container .main .main__painel .indicator .indicator__value {
+    position: relative;
+    font-size: 3rem;
+    text-align: right;
+    padding-right: 1rem;
+    font-family: monospace;
+
+}
+
+.indicator__total {
+    background-color: red !important;
+    color: #fffefe;
+
+}
+
+.main__content {
+    background-color: #000;
+}
+
+.main__painel_content .informations {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 80%;
+    left: 10%;
+    justify-content: center;
+    height: 25rem;
+    justify-content: space-around;
+
+}
+
+.main__painel_content .informations .graphic {
+    position: relative;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+.main__painel_content .informations .summary {
+    width: 100%;
+    height: 100%;
+
+    padding: 1rem;
+    box-sizing: border-box !important;
+}
+
+
+
+.main__painel_content .list {
+
+    position: relative;
+    width: 80%;
+    left: 10%;
+    margin-bottom: 5rem;
+
+
+
+}
+
+.main__painel_content .list table {
+    position: relative;
+    top: 2rem;
+    width: 100%;
+    height: 100%;
+    border-collapse: separate;
+    text-align: center;
+    border: 1px solid #000;
+
+}
+
+.main__painel_content .list table tr {
+
+    height: 3rem;
+
+}
+
+.photo_info__photo {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.photo {
+    position: relative;
+    width: 2rem;
+}
+
+.main__painel_content .list table tr:nth-child(even) {
+    background-color: #f2f2f2;
+    height: 3rem;
+
+}
+
+.main__painel_content .list table thead {
+    background-color: #000;
+    height: 4rem;
+    color: #fff;
+
+
+}
+
+
+.main__painel_content .list table tr>td {
+    border: 1px solid #000;
+}
+
+.person_summary_container {
+    position: relative;
+    background-color: #ffffff;
+    width: 100%;
+    height: 40%;
+    margin-bottom: 3rem;
+    border: 1px solid #000;
+
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+
+.person_summary_container .summary_person {
+    background-color: #ccc;
+    position: absolute;
+
+    padding: .3rem;
+    min-width: 12rem;
+    left: 1rem;
+    top: -1.1rem;
+    z-index: 6;
+}
+
+.person_summary_container .person_value {
+
+    position: relative;
+    top: 2rem;
+    width: 90%;
+    height: 75%;
+    font-family: monospace;
+    display: block;
+    text-align: end;
+    font-size: 4rem;
+    padding-left: 2rem;
+
+
+}
+
+
+.a_print {
+    position: fixed;
+    display: inline-block;
+    bottom: 0;
+    width: 3rem;
+    right: 0;
+    padding-right: 5rem;
+    padding-top: -5rem;
+
+}
+
+
+
+#pager-new-exempenses {
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 999;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#pager-new-exempenses .modal_date {
+    background-color: #ccc;
+    width: 40%;
+    height: auto;
+    padding: .8rem;
+    border-radius: 3px;
+
+}
+
+#pager-new-exempenses .modal_date .bar {
+    position: relative;
+    height: 5rem;
+
+}
+
+#pager-new-exempenses .modal_date .bar .bar_close {
+    font-size: xx-large;
+    position: absolute;
+    color: red;
+    right: 0;
+    padding-right: 2rem;
+    padding-top: 1rem;
+}
+
+#pager-new-exempenses .modal_date .main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #2ddb0e;
+}
+
+#pager-new-exempenses .modal_date .main .forminput_container {
+    background-color: #fff;
+    width: 90%;
+    height:auto;
+    border:1px solid #000;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    
+}
+
+#pager-new-exempenses .modal_date .main .forminput_container .forminput_label{
+    color: #000;
+    font-size: x-large;
+    padding: 1rem;
+}
+#pager-new-exempenses .modal_date .main .forminput_container .select{
+   height: 100%;
+   padding-left: 1rem;
+   position: relative;
+   padding-bottom: 1rem;
+ 
+}
+#pager-new-exempenses .modal_date .main .forminput_container .select select{
+    height: 3rem;
+    width: 97%;
+    font-size: xx-large;
+    position: relative;
+    border: none;
+    outline: none;
+    background:none;
+}
+
+#pager-new-exempenses .modal_date .main .btn{
+    height: 3rem;
+    font-size: 1.2rem;
+    padding: .6rem;
+    background-color: #000;
+    border-radius: 3px;
+    color: #fff;
+    margin-left: 28rem;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
