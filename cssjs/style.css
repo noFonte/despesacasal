@@ -31,6 +31,14 @@ a:visited {
     color: #2ddb0e;
 }
 
+
+
+.rows{
+    display: flex;
+    justify-content: space-between;
+    
+    width:90%;
+}
 .exit_highlights {
     color: red;
 }
@@ -440,7 +448,166 @@ body {
 
 
 
+#pager-new {
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 999;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+ 
 
+}
+
+#pager-new .modal_date {
+    background-color: #ccc;
+    width: 40%;
+    height: auto;
+    padding: .8rem;
+    border-radius: 3px;
+    margin-top: 20rem;
+
+}
+
+#pager-new .modal_date .bar {
+    position: relative;
+    height: 5rem;
+
+}
+
+#pager-new .modal_date .bar .bar_close {
+    font-size: xx-large;
+    position: absolute;
+    color: red;
+    right: 0;
+    padding-right: 2rem;
+    padding-top: 1rem;
+}
+
+#pager-new .modal_date .main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #2ddb0e;
+}
+
+#pager-new .modal_date .main .forminput_container {
+    background-color: #fff;
+    width: 90%;
+    height:auto;
+    border:1px solid #000;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    
+}
+
+#pager-new .modal_date .main .forminput_container .forminput_label{
+    color: #000;
+    font-size: x-large;
+    padding: 1rem;
+}
+#pager-new .modal_date .main .forminput_container .select{
+   height: 100%;
+   padding-left: 1rem;
+   position: relative;
+   padding-bottom: 1rem;
+ 
+}
+#pager-new .modal_date .main .forminput_container .select select{
+    height: 3rem;
+    width: 97%;
+    font-size: xx-large;
+    position: relative;
+    border: none;
+    outline: none;
+    background:none;
+}
+
+#pager-new .modal_date .main .forminput_container .select  input{
+
+    height: 3rem;
+    width: 97%;
+    font-size: xx-large;
+    position: relative;
+    border: none;
+    outline: none;
+    background:none;
+
+}
+#pager-new .modal_date .main .btn{
+    height: 3rem;
+    font-size: 1.2rem;
+    padding: .6rem;
+    background-color: #000;
+    border-radius: 3px;
+    color: #fff;
+    margin-left: 28rem;
+
+
+}
+
+.file-container{
+    overflow: hidden;
+    position: relative;
+}
+
+.date_select{
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    right: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+.file-label{
+    position: absolute;
+    width:90%;
+    height:100%;
+    text-align: center;
+    top:2rem
+}
+
+.file-btn{
+    display: none;
+}
+
+
+.registrar{
+    height: 3rem;
+    position: relative;
+    background-color: #3f3d3d;
+    color: #f2f2f2;
+    width: 100%;
+}
+
+.btn-registrar{
+    background:none;
+    width: 90%;
+    height:auto;
+    border:1px solid #000;
+    margin-bottom: 1rem;
+    font-family: monospace;
+}
+
+.action_launch_expense{
+    background-color: #fff  !important;
+}
+
+.launch_expense{
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+}
 
 
 

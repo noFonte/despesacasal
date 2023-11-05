@@ -17,7 +17,7 @@ primeira Aula
 https://www.youtube.com/watch?v=LocRdAMPEQM&list=PL8Ml6PuZiQaRU5RIGB9k37nWPyhU0Matr&index=1
 
 
-
+Despesa do Casal , com php TDD,HTML , Css e Banco de Dados  Teste Case parte 1
 
 
 
@@ -26,7 +26,7 @@ Despesa do Casal , com php TDD,HTML , Css e Banco de Dados  ,
 Fonte:https://fredbf.com/disciplinas/ufc/fundamentos/300%20ideias.pdf
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 GitHub:
-https://github.com/MundoDodev/despesacasal
+https://github.com/noFonte/despesacasal
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 Criado partir de uma lista de exercícios de lógica de Programação. 
 

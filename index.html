@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="cssjs/style.css">
-    
+
     <link rel="stylesheet" href="cssjs/animations.css">
 
 
@@ -82,7 +81,11 @@
                                 <th>Despesa</th>
                                 <th>Valor</th>
                                 <th>Data de Pagamento</th>
-                                <th>Nova +</th>
+                                <th class="action_launch_expense">
+                                    <button onclick="launchExpense()" class="launch_expense">
+                                        Nova +
+                                    </button>
+                                </th>
                             </tr>
                         </thead>
                         <tbody>
@@ -330,7 +333,7 @@
 
 
 
-    <div id="pager-new-exempenses" class="hide animate__animated animate__zoomInDown" >
+    <div id="pager-new-exempenses" class="hide animate__animated animate__zoomInDown">
 
         <div class="modal_date ">
             <div class="bar">
@@ -346,7 +349,7 @@
                         <select>
                             <option value="" selected>2023</option>
                             <option value="">2022</option>
-                   
+
                         </select>
                     </div>
                 </div>
@@ -355,20 +358,20 @@
                     <div class="forminput_label">Selecione o Mês</div>
                     <div class="select">
                         <select>
-                           
-                            <option value="01">Enero</option> 
-                            <option value="02">Febrero</option> 
-                            <option value="03">Marzo</option> 
-                            <option value="04">Abril</option> 
-                            <option value="05">Mayo</option> 
-                            <option value="06">Junio</option> 
-                            <option value="07">Julio</option> 
-                            <option value="08">Agosto</option> 
-                            <option value="09">Septiembre</option> 
-                            <option value="10">Octubre</option> 
-                            <option value="11">Noviembre</option> 
-                            <option value="12">Diciembre</option> 
-                   
+
+                            <option value="01">Enero</option>
+                            <option value="02">Febrero</option>
+                            <option value="03">Marzo</option>
+                            <option value="04">Abril</option>
+                            <option value="05">Mayo</option>
+                            <option value="06">Junio</option>
+                            <option value="07">Julio</option>
+                            <option value="08">Agosto</option>
+                            <option value="09">Septiembre</option>
+                            <option value="10">Octubre</option>
+                            <option value="11">Noviembre</option>
+                            <option value="12">Diciembre</option>
+
                         </select>
                     </div>
                 </div>
@@ -379,60 +382,116 @@
         </div>
 
 
+    </div>
 
 
+    <div id="pager-new" class="hide animate__animated animate__zoomInDown">
 
+        <div class="modal_date ">
 
-
-        <div id="pager-new-exempenses" class="hide" >
-
-            <div class="modal_date ">
-                <div class="bar">
-                    <a href="#" title="Close" id="close-modal">
-                        <span class="bar_close">X</span>
-                    </a>
-                </div>
-                <div class="main">
-    
-                    <div class="forminput_container">
-                        <div class="forminput_label">Selecione o Ano</div>
-                        <div class="select">
-                            <select>
-                                <option value="" selected>2023</option>
-                                <option value="">2022</option>
-                       
-                            </select>
-                        </div>
-                    </div>
-    
-                    <div class="forminput_container">
-                        <div class="forminput_label">Selecione o Mês</div>
-                        <div class="select">
-                            <select>
-                               
-                                <option value="01">Enero</option> 
-                                <option value="02">Febrero</option> 
-                                <option value="03">Marzo</option> 
-                                <option value="04">Abril</option> 
-                                <option value="05">Mayo</option> 
-                                <option value="06">Junio</option> 
-                                <option value="07">Julio</option> 
-                                <option value="08">Agosto</option> 
-                                <option value="09">Septiembre</option> 
-                                <option value="10">Octubre</option> 
-                                <option value="11">Noviembre</option> 
-                                <option value="12">Diciembre</option> 
-                       
-                            </select>
-                        </div>
-                    </div>
-                    <button class="btn ">
-                        consultar
-                    </button>
-                </div>
+            <div class="bar">
+                <a href="#" title="Close" id="close-modal_expense">
+                    <span class="bar_close">X</span>
+                </a>
             </div>
 
-            
+            <div class="main">
+
+                <div class="forminput_container">
+                    <div class="forminput_label">Quem está Pagando</div>
+                    <div class="select">
+                        <select>
+                            <option value="M" selected>Marido</option>
+                            <option value="E">Esposa</option>
+
+                        </select>
+                    </div>
+                </div>
+
+                <div class="rows">
+                    <div class="forminput_container">
+                        <div class="forminput_label"> Mês</div>
+                        <div class="select">
+                            <select>
+
+                                <option value="01">Enero</option>
+                                <option value="02">Febrero</option>
+                                <option value="03">Marzo</option>
+                                <option value="04">Abril</option>
+                                <option value="05">Mayo</option>
+                                <option value="06">Junio</option>
+                                <option value="07">Julio</option>
+                                <option value="08">Agosto</option>
+                                <option value="09">Septiembre</option>
+                                <option value="10">Octubre</option>
+                                <option value="11">Noviembre</option>
+                                <option value="12">Diciembre</option>
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="forminput_container">
+                        <div class="forminput_label">Ano</div>
+                        <div class="select">
+                            <select>
+
+                                <option value="01">2023</option>
+                                <option value="02">2013</option>
+
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="forminput_container">
+                    <div class="forminput_label"></div>
+                    <div class="select">
+                        <input type="text" value="20/10/2023 14:14:23">
+                        <button class="date_select" type="button">
+                            <i class="fa fa-calendar" style="font-size:24px;color:red"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="forminput_container">
+                    <div class="forminput_label">Descrição da Despesa</div>
+                    <div class="select">
+                        <input type="text" value="">
+
+                    </div>
+                </div>
+
+
+
+                <div class="rows">
+                    <div class="forminput_container file-container">
+                        <a href="#" onclick="openSelectFile()" title="Selecione uma Imagem..!">
+                            <div class="forminput_label file-label" id="file_description">Carrege o imagen da Despesa
+                            </div>
+                            <div class="select">
+                                <input type="file" id="file-input" class="file-btn" />
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="forminput_container">
+                        <div class="forminput_label">Valor da Despesas</div>
+                        <div class="select">
+                            <span>R$</span>
+                            <input type="text" value="0.00">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="  btn-registrar">
+                    <button class="registrar">
+                        Registrar
+                    </button>
+                </div>
 
 
 
@@ -441,7 +500,15 @@
 
 
 
+
+            </div>
+        </div>
     </div>
+
+
+
+
+
 
 
     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
@@ -451,17 +518,52 @@
 
     <script>
 
-        new DOM().by("onActionSelectDate").addEventListener("click",function(event){
+        new DOM().by("onActionSelectDate").addEventListener("click", function (event) {
             new DOM().by("pager-new-exempenses").classList.remove("hide")
         })
 
-        new DOM().by("close-modal").addEventListener("click",function(event){
+        new DOM().by("close-modal").addEventListener("click", function (event) {
             new DOM().by("pager-new-exempenses").classList.add("hide")
         })
 
-        
-        
-        
+        new DOM().by("close-modal_expense").addEventListener("click", function (event) {
+            new DOM().by("pager-new").classList.add("hide")
+        })
+
+
+
+
+
+    
+
+        new DOM().by("file-input").addEventListener("change", function (event) {
+
+
+
+
+            new DOM().by("file_description").textContent = "Imagens OK "
+        })
+
+
+
+        function launchExpense(){
+            new DOM().by("pager-new").classList.remove("hide")
+        }
+
+
+
+
+        function openSelectFile() {
+
+            console.log(new DOM().by("file-input").files[0]);
+
+            new DOM().by("file-input").click()
+
+
+        }
+
+
+
 
 
 
